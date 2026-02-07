@@ -7,43 +7,41 @@
 - Choose a dataset of interest from the [City of Toronto’s Open Data Portal](https://www.toronto.ca/city-government/data-research-maps/open-data/) or [Ontario’s Open Data Catalogue](https://data.ontario.ca/). 
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 - For each visualization, describe and justify: 
-    Visualization 1: Hourly Well Water Level Time Series (Excel)
+    Visualization 1: Hourly Groundwater Level at Monitoring Well 31
 What software did you use to create your data visualization?
-
-This data visualization was created using Microsoft Excel. Excel was used to import the CSV file, format the datetime column, and generate a line chart representing hourly groundwater levels for Well 31.
+This visualization was created using R (RStudio environment) with the ggplot2 package. The data were imported from a CSV file and plotted as a time-series line graph.
 
 Who is your intended audience?
 
-The intended audience includes non-technical stakeholders, such as municipal staff, policy makers, students, and members of the public who are interested in groundwater monitoring but may not have programming experience. 
+The intended audience can be water resource managers, Phd students in this field, or environmental scientists,who are interested in groundwater monitoring and long-term water level stability. The visualization is also accessible to members of the public who want to understand groundwater trends.
 
 What information or message are you trying to convey with your visualization?
 
-The visualization presents hourly well water level measurements over time, allowing viewers to observe overall stability, short-term variability, and notable anomalies (such as sudden drops). It provides an overview of groundwater behavior at the finest temporal resolution available. It is for eye balling the data to check the dat before giving to python.
+The visualization shows hourly groundwater level measurements at Well 31 over time, allowing viewers to observe overall stability, seasonal fluctuations, and unusual anomalies such as sudden drops or spikes. The primary message is to communicate how groundwater levels change over long periods and to highlight potential irregular measurements.
 
 What aspects of design did you consider when making your visualization?
 
-1) Using a simple line chart to emphasize temporal continuity, 2) Maintaining a clean background with light gridlines. 3)Choosing a single, consistent color to avoid distraction, 4) Ensuring axes were clearly labeled and readable 5)These choices were made to prioritize clarity and ease of interpretation.
+1) A line chart was used to emphasize the continuous nature of time-series data. 2) Clear axis labels were included to specify both the variable and units. 3) A minimal theme reduced visual clutter to be accessible for color blind people. 4) A single high-contrast color (black) ensures readability especially for color blind people. 5) Gridlines were kept subtle to support interpretation without distraction and be visulaly attractive. 6) A descriptive title was added to provide context. 7) These choices help viewers focus on temporal patterns.
 
 How did you ensure that your data visualizations are reproducible?
 
-Excel is partially reproducible. The same visualization can be recreated by reloading the dataset and following the same steps, but manual interactions (e.g., formatting and axis adjustments) are not automatically documented, which may introduce small variations between reproductions.
+Reproducibility was ensured by using script-based analysis in R. The code documents each step, including data import, formatting, and plotting. Anyone with access to the dataset and script can regenerate the exact visualization.
 
 How did you ensure that your data visualization is accessible?
 
-
-Using a high-contrast line color, Including clear titles and axis labels, Avoiding reliance on color alone to convey meaning and lastly the visualization remains interpretable when printed in grayscale.
+It is Clearly labeled axes with units, High-contrast color selected, I used readable font size, Avoiding reliance on color alone to communicate information, Using a simple layout that reduces cognitive load. These features ensure the visualization is understandable in grayscale and by diverse audiences.
 
 Who are the individuals and communities who might be impacted by your visualization?
 
-This visualization may impact local communities relying on groundwater resources, municipal water managers, or maybe environmental agencies by supporting understanding of groundwater level stability and potential risks.
+Local communities relying on groundwater resources, county or city water authorities, environmental monitoring agencies, and researchers in water resource management may be impacted. Understanding groundwater stability can influence water management and sustainability decisions.
 
 How did you choose which features of your chosen dataset to include or exclude?
 
-Only time and water level measurements were included. Metadata and administrative fields were excluded to maintain focus on groundwater trends and avoid unnecessary complexity.
+Only the datetime (READING_DTTM) and water level elevation variables were included because they directly represent groundwater trends. Other administrative or metadata fields were excluded (like ID) to maintain clarity and focus on the primary research question.
 
 What ‘underwater labour’ contributed to your final data visualization product?
 
-Underwater labour included cleaning the datetime format, inspecting for missing or anomalous values, adjusting axis scales, and refining chart layout for readability.
+Cleaning and verifying datetime formatting, Inspecting the dataset for anomalies and missing values, Selecting appropriate axis scaling, Refining plot layout and labels, Testing different visualization approaches before selecting the final design
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
